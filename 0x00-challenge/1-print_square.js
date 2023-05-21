@@ -14,10 +14,10 @@ if (process.argv.length <= 2) {
     process.exit(1);
 }
 
-const size = 10;  // Change the size to 10
+const size = parseInt(process.argv[2]);
 
-for (let i = 0; i < size; i++) {
-    for (let j = 0; j < size; j++) {
+for (let i = 0; i < 10; i++) {
+    for (let j = 0; j < 10; j++) {
         process.stdout.write("#");
     }
     process.stdout.write("\n");
